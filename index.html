@@ -328,20 +328,14 @@
             </div>
             <div class="email-input">
                 <h4 class="email-input-title">Subscribe</h4>
-                <ul class="email-input-list">
-                    <li class="email-input-element">
-                        <form action="">
+                        <form  class="email-input-form"action="">
                             <input class="input-email" type="email" name="" placeholder="E-mail">
+                            <button class="submit">Subscribe
+                                <svg class = "modal-input-frame" width="24" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
+                                </svg>
+                            </button>
                         </form>
-                    </li >
-                    <li class="email-input-element">
-                        <button class="submit">Subscribe
-                            <svg class = "modal-input-frame" width="24" height="20">
-                                <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul >
             </div>
         </div>
     </footer>
@@ -389,22 +383,22 @@
                             id="user-comment"
                             class="modal-texarea"
                             placeholder="Text input"
-                        ></textarea>
+                        >
+                        </textarea>
                         </div>
-                        <input
-                        type="checkbox"
-                        name="user-privacy"
-                        value="true"
-                        id="privacy"
-                        class="modal-check visually-hidden"
-                        /><label for="privacy" class="check-text"
-                        >I accept the terms and conditions of the
-                            <a href="#" class="a-text">Privacy Policy</a>
-                        </label>
-                    </div>
-                    <button class="modal-submit" type="submit">Send</button>
-                </form>
-                
+                            <div class="checkbox">
+                                <input class="modal-check visually-hidden" id ="Privacy" name="user-privacy" type="checkbox" value="true" />
+                                <label for="PrivacyPolicy" class="check-text">
+                                    <span width="10" height="8" class="modal-vector">
+                                        <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                                    </span> I accept the terms and conditions of the 
+                                    <a href="#" class="check-item">Privacy Policy</a>
+                                </label>
+                            </div>
+
+                        <button class="modal-submit" type="submit">Send</button>
+                </div>
+            </form>  
         </div>
     </div>
     <script src="./js/modal.js"></script>   
