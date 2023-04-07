@@ -327,7 +327,7 @@
                 </ul>
             </div>
             <div class="email-input">
-                <h4 class="email-input-title">Subscribe</h4>
+                <b class="email-input-title">Subscribe</b>
                         <form  class="email-input-form"action="">
                             <input class="input-email" type="email" name="" placeholder="E-mail">
                             <button class="submit">Subscribe
@@ -386,14 +386,21 @@
                         >
                         </textarea>
                         </div>
-                            <div class="checkbox">
-                                <input class="modal-check visually-hidden" id ="Privacy" name="user-privacy" type="checkbox" value="true" />
+                            <div class="modal-label-txt">
+                                <input
+                                type="checkbox"
+                                id="PrivacyPolicy"
+                                name="user-privacy"
+                                value="true"
+                                class="modal-checkbox visually-hidden"
+                                />
                                 <label for="PrivacyPolicy" class="check-text">
-                                    <span width="10" height="8" class="modal-vector">
-                                        <use href="./images/symbol-defs.svg#icon-Vector"></use>
-                                    </span> I accept the terms and conditions of the 
-                                    <a href="#" class="check-item">Privacy Policy</a>
-                                </label>
+                                <span>
+                                    <svg width="10" height="8" class="modal-vector">
+                                    <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                                    </svg>
+                                </span> I accept the terms and conditions of the<a class="check-item" href="">Privacy Policy</a></label
+                                >
                             </div>
 
                         <button class="modal-submit" type="submit">Send</button>
