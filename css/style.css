@@ -733,6 +733,10 @@ ul {
   border-color: var(--color-ocean);
 }
 
+.svg-customers {
+  gap: 24px;
+}
+
 .svg-customers:hover,
 .svg-customers:focus {
   fill: var(--color-ocean);
@@ -917,12 +921,14 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-navy-blue);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
 }
 .modal-input:hover,
 .modal-input:focus {
-  border: 1px solid var(--color-iris);
+  border-color: var(--color-iris);
   border-radius: 4px;
 }
 .modal-input-frame {
@@ -989,7 +995,7 @@ ul {
 .modal-input:hover ~ .modal-input-icon,
 .modal-input:focus ~ .modal-input-icon {
   fill: var(--color-iris);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .input-email {
   width: 264px;
@@ -1011,6 +1017,7 @@ ul {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  display: inline-block;
 }
 .email-input-element {
   margin-right: 24px;
@@ -1058,6 +1065,9 @@ ul {
   outline: transparent;
   resize: none;
   padding-left: 16px;
+  color: rgba(117, 117, 117, 0.5);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea:focus {
   border-color: var(--color-ocean);
